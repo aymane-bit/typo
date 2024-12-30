@@ -1,7 +1,6 @@
-
 html, body {
     text-align: center;
-    background: black;
+    background: #1e272e;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -12,28 +11,40 @@ html, body {
 #changeme {
     width: 750px;
     height: 850px;
-    margin: 20px;
+    margin: 20px auto;
     background: #273C75;
-    margin: 20px  auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0.7;
+    opacity: 0.9;
     border-radius: 20px;
+    position: relative;
+    z-index: 2;  /* Ensure it's on top of the moving words */
 }
 
 .buttons {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     color: #8C7AE6;
     background-color: transparent;
     border: none;
     font-size: 64px;
-    font-family: Itim;
-    letter-spacing: 25px;
+    font-family: Itim, sans-serif;
+    letter-spacing: 5px;
     transition: transform 0.6s ease-out;
 }
 
 .buttons:hover {
     transform: scale(1.2);
+}
+
+/* Styling for moving words in background */
+.background-word {
+    /* position: absolute; */
+    font-size: 50px;
+    font-weight: bold;
+    color: gray;
+    user-select: none;
+    white-space: nowrap;
+    /* transition: left 0.1s ease-in-out, top 0.1s ease-in-out;  Smooth position change */
 }
