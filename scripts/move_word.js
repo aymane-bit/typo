@@ -12,8 +12,8 @@ function getRandomDirection() {
 function getRandomSpeed() {
     // Random speed between 1 and 3 pixels per frame for more randomness
     return {
-        speedX: Math.random() * 2 + 1,
-        speedY: Math.random() * 2 + 1
+        speedX: Math.random() * 2 + 0.5,
+        speedY: Math.random() * 2 + 0.5
     };
 }
 

@@ -1,6 +1,11 @@
+@font-face {
+    font-family: 'MyCustomFont'; /* Custom name for the font */
+    src: url('/ressources/fonts/Eighty\ Miles.ttf') format('truetype'); /* Adjust the path to your font file */
+}
+
 html, body {
     text-align: center;
-    background: #1e272e;
+    background: #434e8a;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -11,8 +16,9 @@ html, body {
 #changeme {
     width: 750px;
     height: 850px;
-    margin: 20px auto;
-    background: #273C75;
+    margin: 50px auto;
+    background: #BAD7E9;
+    background: #2B3467;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,17 +31,20 @@ html, body {
 
 .buttons {
     margin-bottom: 60px;
-    color: #8C7AE6;
+    color: #2B3467;
+    color: #BAD7E9;
     background-color: transparent;
     border: none;
     font-size: 64px;
-    font-family: Itim, sans-serif;
+    /* font-family: Itim, sans-serif; */
     letter-spacing: 5px;
     transition: transform 0.6s ease-out;
+    text-shadow: 0px 0px 2px #2B3467; /* Add red shadow */
 }
 
 .buttons:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    color: rgb(147, 64, 64);
 }
 
 /* Styling for moving words in background */
@@ -43,8 +52,32 @@ html, body {
     /* position: absolute; */
     font-size: 50px;
     font-weight: bold;
-    color: gray;
+    /* font-family: 'Gloria Hallelujah', 'Comic Sans MS', 'Itim', cursive; */
+    font-family: 'MyCustomFont', sans-serif; /* Fallback to sans-serif */
+    color: rgb(147, 64, 64);
+    color: white;
     user-select: none;
     white-space: nowrap;
+    opacity: 0.7;
     /* transition: left 0.1s ease-in-out, top 0.1s ease-in-out;  Smooth position change */
+}
+
+.background-word:hover {
+    color: #273C75;
+    color: #2B3467;
+}
+
+#guns1{
+    background: none;
+    position: absolute;
+    top: 0.5%;
+    left: 1%;
+    opacity: 100%;
+
+}
+#changeme h1 {
+    color: black;
+    position: absolute;
+    top: 3%;
+    right: 3%;
 }

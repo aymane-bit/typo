@@ -1,0 +1,28 @@
+html, body {
+    text-align: center;
+    background: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#gameplay {
+    width: 750px;
+    height: 850px;
+    margin: 50px auto;
+    background: #273C75;
+    opacity: 0.9;
+    border-radius: 20px;
+    position: relative; /* Needed for absolute positioning inside */
+}
+
+#line {
+    width: 730px; /* Line width reduced by 2cm (1cm on each side) */
+    border: 2px solid red;
+    position: absolute; /* Position the line relative to the parent div */
+    top: 120px; /* Adjust this value to move the line down as needed */
+    left: 50%; /* Centers the line horizontally */
+    transform: translateX(-50%); /* Centers the line perfectly */
+}
